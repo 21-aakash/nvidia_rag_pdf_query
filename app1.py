@@ -87,6 +87,7 @@ if prompt1 and "vectors" in st.session_state:
     response = retrieval_chain.invoke({'input': prompt1})
     st.write("Response time:", time.process_time() - start)
     st.write(response['answer'])
+    st.snow()
 
     # With a Streamlit expander
     with st.expander("Document Similarity Search"):
