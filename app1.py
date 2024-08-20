@@ -46,7 +46,7 @@ def vector_embedding(file_path):
 
         st.session_state.processed = True  # Mark the file as processed
 
-st.title("Nvidia NIM Demo")
+st.title("👽Skychat 5.0.0- Nvidia NIM Demo")
 llm = ChatNVIDIA(model="meta/llama-3.1-405b-instruct")
 
 prompt = ChatPromptTemplate.from_template(
