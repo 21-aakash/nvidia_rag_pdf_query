@@ -72,6 +72,7 @@ if uploaded_file:
         with st.spinner("Processing file..."):
             vector_embedding(file_path)
         st.success("File uploaded and processed successfully!")
+        st.snow()
         st.write("Document Info:", st.session_state.doc_info)
     else:
         st.warning("File has already been processed. Please enter your question.")
