@@ -2,7 +2,7 @@ from openai import OpenAI
 
 client = OpenAI(
   base_url = "https://integrate.api.nvidia.com/v1",
-  api_key = ""
+  api_key = "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"
 )
 
 completion = client.chat.completions.create(
@@ -17,4 +17,3 @@ completion = client.chat.completions.create(
 for chunk in completion:
   if chunk.choices[0].delta.content is not None:
     print(chunk.choices[0].delta.content, end="")
-
